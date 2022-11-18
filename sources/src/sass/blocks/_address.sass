@@ -1,0 +1,67 @@
+.address
+   font-style: normal
+   display: flex
+   flex-direction: column
+   align-items: flex-start
+   &__lead
+      font-weight: 500
+      margin-bottom: 10px
+      font-size: 15px
+      line-height: 150%
+   &__question
+      font-weight: 500
+      margin-bottom: 10px
+      font-size: 15px
+      line-height: 150%
+   &__tel
+      margin-bottom: 10px
+      font-size: 27px
+      line-height: 150%
+      letter-spacing: 0.06em
+   &__time
+      @extend %text
+      margin-bottom: 24px
+   &__location
+      margin-bottom: 24px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      p
+         margin-bottom: 6px
+      a
+         font-weight: 400
+         text-decoration: underline
+   &__email
+      font-weight: 400
+      font-size: 13px
+      line-height: 150%
+      text-decoration: underline
+      color: #6A5948
+
+@media screen and (min-width: $width_tab)
+   .address
+      &__lead
+         margin-bottom: 22px
+         font-size: 19px
+         letter-spacing: 0.06em
+      &__question
+         margin-bottom: 22px
+         font-size: 17px
+         letter-spacing: 0.06em
+      &__tel
+         margin-bottom: 20px
+         font-size: 35px
+      &__time
+         margin-bottom: 34px
+      &__location
+         margin-bottom: 35px
+         a
+            font-size: 15px
+            letter-spacing: 0.06em
+      &__email
+         font-size: 15px
+
+@media screen and (min-width: $width_large)
+   .address
+      &__question
+         font-size: 19px

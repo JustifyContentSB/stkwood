@@ -1,0 +1,90 @@
+.info
+   padding-top: 24px
+   margin-bottom: var(--margin)
+   &__desc
+      margin-bottom: var(--margin)
+   &__text
+      margin-bottom: var(--margin)
+      p
+         margin-bottom: 18px
+         &:last-child
+            margin-bottom: 0
+   &__main
+      &--reverse
+         .form
+            margin-bottom: 40px
+
+@media screen and (min-width: $width_tab)
+   .info
+      padding-top: 30px
+      &__desc
+         margin-bottom: 32px
+      &__text
+         p
+            margin-bottom: 20px
+
+@media screen and (min-width: $width_desk)
+   .info
+      padding-top: 40px
+      &__main
+         display: flex
+         justify-content: space-between
+         &--reverse
+            .info
+               &__desc
+                  margin-right: 0
+            .form
+               margin-right: 30px
+      &__desc
+         width: calc(100% - 480px)
+         margin-right: 30px
+      &__text
+         margin-bottom: 64px
+      .form
+         min-width: 450px
+
+@media screen and (min-width: $width_md)
+   .info
+      &__faq
+         display: flex
+         align-items: flex-start
+      .faq
+         width: 772px
+         min-width: 772px
+         margin-right: 40px
+      &__address
+         width: calc(100% - 812px)
+
+@media screen and (min-width: $width_big)
+   .info
+      margin-bottom: 60px
+      .form
+         min-width: 560px
+      &__desc
+         width: calc(100% - 600px)
+         margin-right: 40px
+      &__main
+         &--reverse
+            .form
+               margin-right: 40px
+
+@media screen and (min-width: $width_large)
+   .info
+      margin-bottom: 104px
+      padding-top: 60px
+      .form
+         min-width: 660px
+      &__desc
+         width: calc(100% - 720px)
+         margin-right: 60px
+      &__text
+         p
+            margin-bottom: 26px
+      &__address
+         width: calc(100% - 832px)
+      .faq
+         margin-right: 60px
+      &__main
+         &--reverse
+            .form
+               margin-right: 60px

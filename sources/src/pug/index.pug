@@ -1,0 +1,85 @@
+extends base/_layout
+block head
+   title Главная
+block page
+   section.furniture
+      .furniture__slider
+         .furniture__list
+            .swiper-container
+               .swiper-wrapper
+                  .furniture__slide.swiper-slide
+                     .background-image
+                        picture
+                           //- source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
+                           //- source(srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg")
+                           source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
+                           img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
+                     .furniture__info
+                        h2.title создаем мебель по индивидуальным проектам
+                        p.furniture__text.
+                           Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
+                        .furniture__manage
+                           a.btn(href="#") Подробнее о компании
+                           a.btn.btn--secondary(href="#") Оставить заявку
+
+   section.process
+      .process__inner.container
+         .process__pic
+            .prociess__img
+               img(src="images/process/process-mob.jpg" alt="фотография процесса" width="331" height="186")
+            .process__desc
+               p.
+                  Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+         .process__info
+            h2.title Как мы изготавливаем нашу продукцию
+            .process__text
+               p.process__text-lead.
+                  Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+               p.
+                  Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+               p.
+                  Отличное техническое оснащение производства. В 2009 году фабрика практически полностью (на 90-95%) обновила технологический парк. Сегодня производство, под которое отведено 15 000 м2, представляет собой современный комплекс, оснащенный инновационным оборудованием.
+
+   section.produce
+      .produce__inner
+         .produce__top.container
+            h2.title Наша специализация и производство
+            .produce__info
+               p.produce__text.
+                  Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+               a.btn-arrow(href="#")
+                  span Перейти к нашим проектам
+                  img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
+         .produce__pic
+            picture
+               //- source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
+               //- source(srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg")
+               source(srcset="images/produce/produce-mob.webp" type="image/webp")
+               img(src="images/produce/produce-mob.jpg" alt="Мебель" width="346" height="203")
+
+   section.reviews
+      .reviews__inner.container
+         .reviews__main
+            ul.reviews__doc
+               li
+                  img(src="images/reviews/doc.png", alt="документ" width="77" height="118")
+               li
+                  img(src="images/reviews/doc.png", alt="документ" width="77" height="118")
+            .reviews__info
+               .reviews__top
+                  h2.title Отзывы наших клиентов
+                  p.reviews__lead Стоит отметить, что специалист
+               p.reviews__text.
+                  Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит.
+               a.btn-arrow(href="#")
+                  span Перейти к нашим проектам
+                  img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
+         ul.reviews__brands
+            li
+               img(src="images/brands/brands-1.png", alt="газпром" width="69" height="34")
+            li
+               img(src="images/brands/brands-2.png", alt="роснефть" width="73" height="37")
+            li
+               img(src="images/brands/brands-3.png", alt="новатэк" width="92" height="27")
+            li
+               img(src="images/brands/brands-4.png", alt="татнефть" width="89" height="31")

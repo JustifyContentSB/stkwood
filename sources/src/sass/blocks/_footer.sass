@@ -1,0 +1,71 @@
+.footer
+   background: #F5F5F5
+   &__inner
+      padding: 47px var(--padding)
+   &__top
+      margin-bottom: 22px
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__logo
+      margin: 0
+      margin-bottom: 10px
+   &__nav
+      margin-bottom: 32px
+      &-list
+         font-weight: 400
+         font-size: 11px
+         line-height: 109%
+         letter-spacing: 0.15em
+         text-align: center
+         li
+            margin-bottom: 14px
+            &:last-child
+               margin-bottom: 0
+   &__bottom
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__tel
+      margin-bottom: 24px
+      font-weight: 300
+      font-size: 19px
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: #727272
+   &__copy
+      font-weight: 300
+      font-size: 8px
+      text-align: center
+      letter-spacing: 0.06em
+      color: #000000
+
+@media screen and (min-width: $width_tab)
+   .footer
+      &__top
+         margin-bottom: 30px
+      &__nav
+         margin-bottom: 40px
+         &-list
+            font-size: 12px
+            li
+               margin-bottom: 19px
+      &__tel
+         font-size: 21px
+      &__copy
+         font-size: 10px
+
+@media screen and (min-width: $width_desk)
+   .footer
+      &__inner
+         padding: 70px 60px
+      &__nav
+         margin-bottom: 20px
+         &-list
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            li
+               margin-right: 50px
+               &:last-child
+                  margin-right: 0
