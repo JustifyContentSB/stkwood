@@ -60,12 +60,24 @@
    border: 1px solid #000
    color: #000
    text-transform: uppercase
+   transition: $transition
    font-weight: 500
    font-size: 13px
    letter-spacing: 0.1em
+   &:hover,
+   &:focus
+      background: #000
+      color: #fff
    &--secondary
       background: #000
       color: #fff
+      &:hover,
+      &:focus
+         background: #fff
+         color: #000
+   &--grey
+      color: #737373
+      border-color: #737373
 
 .btn-arrow
    display: inline-flex
@@ -75,9 +87,18 @@
    letter-spacing: 0.1em
    color: #000000
    text-transform: uppercase
+   transition: $transition
    span
       margin-right: 24px
       text-decoration: underline
+   img
+      transition: $transition
+   &:hover,
+   &:focus
+      span
+         text-decoration: none
+      img
+         transform: translateX(5px)
 
 .logo
    margin-right: auto
@@ -140,6 +161,36 @@
       width: 24px
       height: 24px
 
+.text
+   p
+      margin-bottom: 18px
+      &:last-child
+         margin-bottom: 0
+   &__lead
+      @extend %text
+
+.desc
+   padding: 20px
+   background-image: url('../images/process/process-lines.png')
+   background-repeat: no-repeat
+   background-position: center
+   background-size: cover
+
+.list
+   li
+      margin-bottom: 12px
+      padding-left: 20px
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         left: 0
+         top: 4px
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         background: #F0D8C0
+
 @media screen and (min-width: $width_tab)
    .logo
       font-size: 28px
@@ -154,15 +205,27 @@
       span
          font-size: 9px
    .title
+      font-size: 24px
+      line-height: 120%
       &::after
          width: 80px
       &--sec
          margin-bottom: 30px
          font-size: 32px
    .btn
-      padding: 15px 38px
+      padding: 13px 38px 12px
    .call
       display: none
+   .desc
+      padding: 40px
+      background-image: url('../images/process/process-lines-tab.png')
+      font-size: 15px
+      line-height: 150%
+   .text
+      p
+         margin-bottom: 22px
+      .text__lead
+         margin-bottom: 38px
 
 @media screen and (min-width: $width_desk)
    .title
@@ -173,15 +236,22 @@
          .logo
             &__icon
                margin-bottom: 20px
+   .desc
+      background-image: url('../images/process/process-lines-desk.png')
 
 @media screen and (min-width: $width_big)
    .title
       &--sec
          margin-bottom: 30px
+   .desc
+      background-image: url('../images/process/process-lines-1440.png')
 
 @media screen and (min-width: $width_large)
    .title
       padding-bottom: 20px
+      font-size: 28px
+      letter-spacing: 0.06em
       &--sec
          margin-bottom: 54px
          font-size: 40px
+         letter-spacing: 0.1em

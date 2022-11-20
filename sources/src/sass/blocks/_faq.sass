@@ -35,7 +35,7 @@
    &__question
       padding: 14px 52px 14px 50px
       display: flex
-      background: #F5F5F5
+      background: var(--secBg)
       position: relative
       &::after
          content: ''
@@ -46,6 +46,10 @@
          top: 50%
          transform: translateY(-50%)
          background: url('../images/icons/arrow-down.svg') no-repeat center / contain
+         transition: $transition
+      &--active
+         &::after
+            transform: translateY(-50%) rotate(180deg)
    &__answer
       display: none
       p

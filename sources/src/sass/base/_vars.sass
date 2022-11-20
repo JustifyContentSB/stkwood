@@ -4,10 +4,17 @@ $width_tab: 768px
 $width_desk: 1024px
 $width_md: 1280px
 $width_big: 1440px
-$width_large: 1900px
+$width_large: 1920px
+
+//colors
+$linkColor: #6A5948
+$borderColor: #D9D9D9
 
 //sizes
 $contWidth: 1670px
+
+//other
+$transition: all .2s ease
 
 :root
    --padding: 14px
@@ -17,6 +24,25 @@ $contWidth: 1670px
 %text
    color: #737373
 
+%linkHover
+   transition: $transition
+   position: relative
+   &::before
+      content: ''
+      position: absolute
+      height: 1px
+      background: #000
+      bottom: 0
+      right: 0
+      width: 0
+      transition: $transition
+   &:hover,
+   &:focus
+      &::before
+         width: 100%
+         right: auto
+         left: 0
+
 @media screen and (min-width: $width_tab)
    :root
       --padding: 22px
@@ -24,7 +50,13 @@ $contWidth: 1670px
 @media screen and (min-width: $width_desk)
    :root
       --padding: 46px
+      --margin: 50px
 
 @media screen and (min-width: $width_big)
    :root
       --padding: 130px
+      --margin: 60px
+
+@media screen and (min-width: $width_large)
+   :root
+      --margin: 100px

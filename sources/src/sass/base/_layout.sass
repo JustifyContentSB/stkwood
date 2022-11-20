@@ -6,6 +6,7 @@
 
 // From libs:
 //@import "../libs/LIB_NAME/path/to/style.scss"
+@import "../libs/swiper/swiper-bundle.min.css"
 
 html
    box-sizing: border-box
@@ -34,6 +35,8 @@ body
    letter-spacing: 0.06em
    -webkit-font-smoothing: antialiased
    -moz-osx-font-smoothing: grayscale
+   &.no-scroll
+      overflow: hidden
 
 .visually-hidden:not(:focus):not(:active)
    position: absolute

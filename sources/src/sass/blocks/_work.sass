@@ -1,0 +1,70 @@
+.work
+   margin-bottom: var(--margin)
+   &__info
+      margin-bottom: 24px
+   &__text
+      margin-bottom: 20px
+   &__pic
+      background: rgba(0, 0, 0, 0.05) url('../images/work/work-lines.png')
+      &-img
+         display: flex
+         justify-content: flex-end
+         img
+            width: 100%
+
+@media screen and (min-width: $width_tab)
+   .work
+      &__inner
+         display: flex
+         flex-direction: column
+      &__pic
+         margin-bottom: 20px
+         order: -1
+         background: rgba(0, 0, 0, 0.05) url('../images/work/work-lines-tab.png')
+
+@media screen and (min-width: $width_desk)
+   .work
+      &__inner
+         padding-left: 0
+         flex-direction: row
+      &__pic
+         min-width: 497px
+         margin: 0
+         margin-right: 30px
+         background: rgba(0, 0, 0, 0.05) url('../images/work/work-lines-desk.png')
+      &__info
+         margin: 0
+         display: flex
+         flex-direction: column
+         .btn-arrow
+            margin-top: auto
+
+@media screen and (min-width: $width_big)
+   .work
+      &__pic
+         min-width: 609px
+         margin-right: 40px
+         background: rgba(0, 0, 0, 0.05) url('../images/work/work-lines-1440.png')
+      &__text
+         margin-bottom: 30px
+      .btn-arrow
+         margin-top: 0
+
+@media screen and (min-width: $contWidth)
+   .work
+      &__pic
+         flex-grow: 1
+      &__info
+         width: calc(100% - ((100% - 1282px) / 2) - 518px)
+      &__inner
+         padding: 0
+         padding-right: var(--padding)
+         max-width: 100%
+
+@media screen and (min-width: $width_large)
+   .work
+      &__pic
+         margin-right: 60px
+         background: rgba(0, 0, 0, 0.05) url('../images/work/work-lines-1920.png')
+      &__info
+         width: calc(100% - ((100% - 1050px) / 2) - 518px)

@@ -11,13 +11,16 @@
       display: grid
       grid-template-columns: 1fr 1fr
       grid-gap: 12px
-      li
+      &-item
          min-width: 100px
          height: 186px
+         padding: 20px
          background: #F5F5F5
          display: flex
          justify-content: center
          align-items: center
+         img
+            filter: drop-shadow(5.51724px 5.51724px 2.2069px rgba(0, 0, 0, 0.05))
    &__text
       margin-bottom: 20px
    &__brands
@@ -26,7 +29,83 @@
       grid-gap: 12px
       li
          height: 70px
-         border: 0.581401px solid #D9D9D9
+         border: 1px solid $borderColor
          display: inline-flex
          justify-content: center
          align-items: center
+
+@media screen and (min-width: $width_tab)
+   .reviews
+      &__main
+         display: flex
+      &__doc
+         width: 290px
+         min-width: 290px
+         margin: 0
+         margin-right: 30px
+         display: block
+         &-item
+            height: 300px
+            display: none
+            &:first-child
+               display: flex
+            img
+               width: 130px
+      &__info
+         width: calc(100% - 320px)
+      &__top
+         margin-bottom: 42px
+      &__text
+         margin-bottom: 32px
+      &__brands
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 20px
+
+@media screen and (min-width: $width_desk)
+   .reviews
+      &__brands
+         li
+            height: 95px
+            img
+               width: 80%
+               margin: 0 auto
+
+@media screen and (min-width: $width_big)
+   .reviews
+      &__main
+         align-items: stretch
+      &__info
+         width: auto
+      &__doc
+         width: auto
+         min-width: 778px
+         margin-right: 40px
+         display: grid
+         grid-gap: 20px
+         flex-grow: 1
+         &-item
+            display: flex
+            min-width: 379px
+            height: 393px
+            img
+               width: 180px
+      &__brands
+         li
+            height: 120px
+            img
+               width: auto
+
+@media screen and (min-width: $width_large)
+   .reviews
+      &__doc
+         min-width: 930px
+         margin-right: 60px
+         grid-gap: 30px
+         &-item
+            height: 467px
+            img
+               width: auto
+      &__brands
+         grid-gap: 30px
+         li
+            height: 147px

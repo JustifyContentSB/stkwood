@@ -1,0 +1,50 @@
+.company
+   margin-bottom: var(--margin)
+   .desc
+      font-weight: 400
+      font-size: 14px
+   .text
+      margin-bottom: 20px
+   &__info
+      margin-bottom: 30px
+   &__pic
+      padding-bottom: 30px
+      border-bottom: 1px solid $borderColor
+
+@media screen and (min-width: $width_tab)
+   .company
+      &__pic
+         padding-bottom: 0
+         border-bottom: 0
+
+@media screen and (min-width: $width_desk)
+   .company
+      --picWidth: 450px
+      --picMargin: 30px
+      .text
+         margin-bottom: 40px
+      &__content
+         display: flex
+         align-items: flex-start
+         justify-content: space-between
+      &__pic
+         min-width: var(--picWidth)
+         width: var(--picWidth)
+      &__info
+         width: calc(100% - var(--picWidth) - var(--picMargin))
+         margin: 0
+
+@media screen and (min-width: 1280px)
+   .company
+      --picWidth: 580px
+      --picMargin: 40px
+
+@media screen and (min-width: 1700px)
+   .company
+      --picWidth: 690px
+      --picMargin: 73px
+
+@media screen and (min-width: $width_large)
+   .company
+      .desc
+         font-size: 17px

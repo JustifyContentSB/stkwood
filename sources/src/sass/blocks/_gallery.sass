@@ -1,0 +1,154 @@
+.gallery
+   margin-bottom: var(--margin)
+   .btn
+      width: 100%
+      min-height: 48px
+   &__top
+      margin-bottom: var(--margin)
+   &__info
+      .text
+         margin-bottom: 20px
+   &__desc
+      .desc
+         margin-bottom: 20px
+         font-weight: 400
+   &__manage
+      padding-bottom: 20px
+      padding-left: var(--padding)
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+      &::-webkit-input-placeholder, &::-moz-placeholder
+         color: #fff
+      &-item
+         margin-right: 10px
+      &-btn
+         display: inline-block
+         padding: 6px 10px
+         white-space: nowrap
+         font-weight: 300
+         font-size: 14px
+         line-height: 150%
+         &--active
+            border-bottom: 2px solid #F0D8C0
+   &__item
+      margin-bottom: 20px
+   &__pic
+      width: 100%
+      height: 240px
+      display: block
+      position: relative
+      picture
+         position: absolute
+         top: 0
+         bottom: 0
+         left: 0
+         right: 0
+      img
+         width: 100%
+         height: 100%
+         object-fit: cover
+         object-position: top
+
+@media screen and (min-width: 500px)
+   .gallery
+      &__list
+         margin-bottom: 20px
+         display: grid
+         grid-template-columns: repeat(2, 1fr)
+         grid-gap: 20px
+      &__item
+         margin: 0
+
+@media screen and (min-width: $width_tab)
+   .gallery
+      .desc
+         font-size: 14px
+      .btn
+         width: auto
+      &__top
+         margin-bottom: 30px
+      &__manage
+         &-item
+            margin-right: 35px
+         &-btn
+            font-size: 17px
+      &__list
+         grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width: $width_desk)
+   .gallery
+      &__top
+         margin-bottom: 40px
+      &__info
+         display: flex
+         justify-content: space-between
+         .text,
+         .gallery__desc
+            width: calc(50% - 20px)
+            margin: 0
+      &__desc
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         .btn
+            margin-top: auto
+      &__manage
+         max-width: $contWidth
+         margin: 0 auto
+         margin-bottom: 10px
+         padding-right: var(--padding)
+         flex-wrap: wrap
+         overflow-x: visible
+      &__list
+         margin-bottom: 30px
+         grid-gap: 30px
+      &__pic
+         height: 307px
+
+@media screen and (min-width: $width_big)
+   .gallery
+      &__top
+         margin-bottom: 55px
+      &__desc
+         .desc
+            margin-bottom: 40px
+      &__manage
+         margin: 0 auto
+      &__list
+         margin-bottom: 20px
+         grid-gap: 20px
+      &__pic
+         height: 401px
+
+@media screen and (min-width: $width_large)
+   .gallery
+      &__top
+         margin-bottom: 100px
+         .title
+            margin-bottom: 46px
+            letter-spacing: 0.1em
+         .text
+            font-size: 17px
+            line-height: 150%
+            letter-spacing: 0.06em
+            p
+               margin-bottom: 28px
+               &:last-child
+                  margin-bottom: 0
+      &__desc
+         .desc
+            font-size: 17px
+            line-height: 150%
+         .btn
+            margin: 0
+      &__manage
+         margin-bottom: 10px
+      &__list
+         grid-gap: 30px
+      &__pic
+         min-height: 475px

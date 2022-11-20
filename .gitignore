@@ -18,5 +18,4 @@ package-lock.json
 pnpm-lock.yaml
 
 # Remove below if you push to customer's git
-/html/*
 /sources/src/libs/*

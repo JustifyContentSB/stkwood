@@ -31,12 +31,18 @@
       a
          font-weight: 400
          text-decoration: underline
+         &:hover,
+         &:focus
+            text-decoration: none
    &__email
       font-weight: 400
       font-size: 13px
       line-height: 150%
       text-decoration: underline
-      color: #6A5948
+      color: $linkColor
+      &:hover,
+      &:focus
+         text-decoration: none
 
 @media screen and (min-width: $width_tab)
    .address

@@ -2,6 +2,8 @@
    margin-bottom: var(--margin)
    &__pic
       margin-bottom: 30px
+      img
+         width: 100%
    &__text
       p
          margin-bottom: 18px
@@ -9,6 +11,40 @@
             margin-bottom: 0
       &-lead
          @extend %text
-   &__desc
-      padding: 20px
-      background: url('../images/process/process-lines.png') no-repeat center / cover
+
+@media screen and (min-width: $width_tab)
+   .process
+      &__pic
+         margin-bottom: 22px
+
+@media screen and (min-width: $width_desk)
+   .process
+      &__inner
+         display: flex
+      &__pic
+         width: 450px
+         min-width: 450px
+         margin: 0
+         margin-right: 30px
+      &__info
+         width: calc(100% - 480px)
+
+@media screen and (min-width: $width_big)
+   .process
+      &__pic
+         min-width: 578px
+         margin-right: 40px
+         display: flex
+      &__img
+         min-width: 278px
+
+@media screen and (min-width: $width_large)
+   .process
+      &__pic
+         min-width: 814px
+         margin-right: 60px
+      &__img
+         width: 454px
+         min-width: 454px
+      &__info
+         width: auto

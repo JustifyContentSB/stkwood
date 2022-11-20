@@ -1,0 +1,32 @@
+.contacts
+   &__text
+      p
+         margin-bottom: 20px
+   &__list
+      &-item
+         margin-bottom: 30px
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         &:last-child
+            margin-bottom: 0
+      &-title
+         margin-bottom: 6px
+      &-link
+         font-weight: 400
+         font-size: 15px
+         line-height: 150%
+         letter-spacing: 0.06em
+         text-decoration-line: underline
+         color: $linkColor
+         &:hover,
+         &:focus
+            text-decoration: none
+
+@media screen and (min-width: $width_big)
+   .contacts
+      &__text
+         margin-bottom: 50px
+      &__list
+         &-title
+            font-size: 15px

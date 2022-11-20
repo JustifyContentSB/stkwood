@@ -1,0 +1,53 @@
+.story
+   margin-bottom: var(--margin)
+   &__info
+      margin-bottom: 20px
+   &__pic
+      max-width: 500px
+      img
+         width: 100%
+
+@media screen and (min-width: $width_tab)
+   .story
+      --picWidth: 352px
+      --picMargin: 20px
+      &__inner
+         padding-top: 30px
+         display: flex
+         align-items: flex-start
+         justify-content: space-between
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: var(--padding)
+            right: var(--padding)
+            height: 1px
+            background: $borderColor
+      &__pic
+         max-width: none
+         min-width: var(--picWidth)
+         width: var(--picWidth)
+      &__info
+         margin-bottom: 0
+         width: calc(100% - var(--picWidth) - var(--picMargin))
+
+@media screen and (min-width: $width_desk)
+   .story
+      --picWidth: 450px
+      --picMargin: 60px
+      &__inner
+         padding-top: 43px
+
+@media screen and (min-width: $width_big)
+   .story
+      --picWidth: 574px
+      --picMargin: 60px
+      &__inner
+         padding-top: 60px
+
+@media screen and (min-width: $width_large)
+   .story
+      &__inner
+         padding-top: 105px

@@ -22,6 +22,8 @@
             margin-bottom: 14px
             &:last-child
                margin-bottom: 0
+         a
+            @extend %linkHover
    &__bottom
       display: flex
       flex-direction: column
@@ -33,6 +35,10 @@
       letter-spacing: 0.1em
       text-transform: uppercase
       color: #727272
+      transition: $transition
+      &:hover,
+      &:focus
+         color: #000
    &__copy
       font-weight: 300
       font-size: 8px

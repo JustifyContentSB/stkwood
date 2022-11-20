@@ -1,0 +1,107 @@
+extends base/_layout
+block head
+   title О компании
+block page
+   main.main
+
+      section.company
+         .company__inner.container
+            h2.title.title--sec О компании
+            .company__content
+               .company__info
+                  .text
+                     p.text__lead.
+                        Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+                     p.
+                        Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит. 
+                     p.
+                        При изготовлении мы используем безопасные современные материалы, воплощаем универсальный и при этом стильный дизайн. Готовые решения подойдут, если вам нужно обставить квартиру или дом в сжатые сроки, при этом вы хотите окружить себя актуальной и эстетичной мебелью от производителя
+                  .desc
+                     p.
+                        Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+               .company__pic
+                  picture
+                     source(srcset="images/company/company.webp" type="image/webp")
+                     img(src="images/company/company.jpg" alt="мебель" width="725" height="725")
+
+      section.benefit
+         .benefit__inner.container
+            h2.title Преимущества:
+            ul.list.benefit__list
+               li.
+                  Одно из наших основных преимуществ — опыт. Мы находимся на рынке проектирования мебели на заказ с 1996 года. За это время мы многому научились, мы постоянно предлагаем покупателям новинки, которые находятся в тренде.
+               li.
+                  Бесспорным преимуществом является наше производство. Мы гарантируем высочайшее качество на всех этапах работы.
+               li.
+                  Мы используем только высококачественные материалы и фурнитуру. Фурнитура — это не просто крепежи. Без ее помощи нельзя придать продукции по-настоящему гармоничный вид. Она позволяет повысить срок службы товара и его качество, поэтому мы предъявляем к ней столь высокие требования. Внимание к деталям — вот что позволяет нам создать по-настоящему стильную мебель на заказ.
+               li.
+                  Также заказ можно оформить в рассрочку.
+            a.btn.btn--grey(href="#") Оставить заявку на проект
+
+      section.story
+         .story__inner.container
+            .story__info
+               h2.title Как мы изготавливаем нашу продукцию
+               .text
+                  p.text__lead.
+                     Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+                  p.
+                     Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+                  p.
+                     Отличное техническое оснащение производства. В 2009 году фабрика практически полностью (на 90-95%) обновила технологический парк. Сегодня производство, под которое отведено 15 000 м2, представляет собой современный комплекс, оснащенный инновационным оборудованием.
+
+            .story__pic
+               picture
+                  source(srcset="images/story/story-1920.webp" media="(min-width: 1920px)" type="image/webp")
+                  source(srcset="images/story/story-1920.jpg" media="(min-width: 1920px)" type="image/jpeg")
+                  source(srcset="images/story/story-1440.webp" media="(min-width: 1440px)" type="image/webp")
+                  source(srcset="images/story/story-1440.jpg" media="(min-width: 1440px)" type="image/jpeg")
+                  source(srcset="images/story/story-1024.webp" media="(min-width: 1024px)" type="image/webp")
+                  source(srcset="images/story/story-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                  source(srcset="images/story/story-tab.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/story/story-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/story/story-mob.webp" type="image/webp")
+                  img(src="images/story/story-mob.jpg" alt="процесс изготовления" width="332" height="221")
+
+      section.reviews
+         .reviews__inner.container
+            .reviews__main
+               ul.reviews__doc
+                  li.reviews__doc-item
+                     img(src="images/reviews/doc.png" alt="документ" width="77" height="118")
+                  li.reviews__doc-item
+                     img(src="images/reviews/doc.png" alt="документ" width="77" height="118")
+               .reviews__info
+                  .reviews__top
+                     h2.title Отзывы наших клиентов
+                     p.reviews__lead Стоит отметить, что специалист
+                  p.reviews__text.
+                     Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит.
+                  a.btn-arrow(href="#")
+                     span Перейти к отзывам
+                     img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
+            ul.reviews__brands
+               li
+                  picture
+                     source(srcset="images/brands/brands-1-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-1-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-1.webp" type="image/webp")
+                     img(src="images/brands/brands-1.png" alt="газпром" width="69" height="34")
+               li
+                  picture
+                     source(srcset="images/brands/brands-2-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-2-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-2.webp" type="image/webp")
+                     img(src="images/brands/brands-2.png" alt="роснефть" width="73" height="37")
+               li
+                  picture
+                     source(srcset="images/brands/brands-3-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-3-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-3.webp" type="image/webp")
+                     img(src="images/brands/brands-3.png" alt="новатэк" width="92" height="27")
+               li
+                  picture
+                     source(srcset="images/brands/brands-4-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-4-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-4.webp" type="image/webp")
+                     img(src="images/brands/brands-4.png" alt="татнефть" width="89" height="31")

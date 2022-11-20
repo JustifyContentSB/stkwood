@@ -1,13 +1,70 @@
 .furniture
    margin-bottom: var(--margin)
+   &__slider
+      position: relative
+      overflow: hidden
+      .swiper
+         &-pagination
+            left: 32px
+            bottom: 18px
+            cfont-weight: 300
+            font-size: 12px
+            line-height: 100%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #fff
+            font-family: 'Fira Sans'
+            text-align: left
+         &-button
+            &-prev,
+            &-next
+               display: none
+               width: 34px
+               height: 100%
+               transform: none
+               top: 0
+               bottom: 0
+               margin: 0
+               pointer-events: auto
+               transition: $transition
+               &::after
+                  color: #fff
+                  font-size: 20px
+               &:hover,
+               &:focus
+                  background: rgba(0, 0, 0, 0.2)
+            &-prev
+               left: 0
+            &-next
+               right: 0
    &__slide
+      height: auto
       padding: 32px
+      padding-bottom: 50px
+      min-height: 314px
       position: relative
       background: #2F1A1B
       color: #fff
-      .title
-         text-transform: uppercase
+   &__title
+      margin-bottom: 12px
+      padding-bottom: 20px
+      font-weight: 700
+      font-size: 18px
+      line-height: 130%
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      font-family: 'Georgia'
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         bottom: 0
+         left: 0
+         width: 80px
+         height: 2px
+         background: #F0D8C0
    &__info
+      max-width: 580px
       position: relative
       z-index: 5
    &__text
@@ -23,3 +80,88 @@
          display: none
          background: #fff
          color: #000
+         &:hover,
+         &:focus
+            background: #000
+            color: #fff
+
+@media screen and (min-width: $width_tab)
+   .furniture
+      &__info
+         max-width: 570px
+      &__title
+         margin-bottom: 24px
+         font-size: 33px
+      &__text
+         margin-bottom: 20px
+         font-size: 16px
+         line-height: 150%
+      &__slide
+         padding: 63px 57px
+         padding-bottom: 100px
+      .swiper-pagination
+         left: 57px
+         bottom: 38px
+         font-size: 15px
+      .btn
+         margin-right: 22px
+         padding: 13px 40px 12px
+         &--secondary
+            display: inline-flex
+
+@media screen and (min-width: $width_desk)
+   .furniture
+      &__slide
+         min-height: 500px
+         padding: 63px 84px 81px
+      &__info
+         max-width: 740px
+      &__title
+         margin-bottom: 30px
+         padding-bottom: 32px
+         font-size: 40px
+         line-height: 120%
+      &__text
+         margin-bottom: 30px
+      .swiper
+         &-pagination
+            left: 84px
+            right: 84px
+         &-button
+            &-prev,
+            &-next
+               display: block
+
+@media screen and (min-width: $width_big)
+   .furniture
+      &__slide
+         padding: 78px 126px 66px
+      .swiper-pagination
+         left: 126px
+         bottom: 22px
+
+@media screen and (min-width: $contWidth)
+   .furniture
+      &__slide
+         padding-left: calc((100% - 1410px) / 2)
+         padding-right: calc((100% - 1410px) / 2)
+      .swiper-pagination
+         left: calc((100% - 1410px) / 2)
+         right: calc((100% - 1410px) / 2)
+
+@media screen and (min-width: $width_large)
+   .furniture
+      &__slide
+         min-height: 680px
+         padding-top: 130px
+         padding-bottom: 130px
+      &__info
+         max-width: 800px
+      &__title
+         margin-bottom: 36px
+         padding-bottom: 30px
+         font-size: 50px
+      &__text
+         margin-bottom: 40px
+      .swiper-pagination
+         bottom: 45px

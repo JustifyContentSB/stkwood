@@ -2,84 +2,208 @@ extends base/_layout
 block head
    title Главная
 block page
-   section.furniture
-      .furniture__slider
-         .furniture__list
-            .swiper-container
-               .swiper-wrapper
-                  .furniture__slide.swiper-slide
-                     .background-image
-                        picture
-                           //- source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
-                           //- source(srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg")
-                           source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
-                           img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
-                     .furniture__info
-                        h2.title создаем мебель по индивидуальным проектам
-                        p.furniture__text.
-                           Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
-                        .furniture__manage
-                           a.btn(href="#") Подробнее о компании
-                           a.btn.btn--secondary(href="#") Оставить заявку
+   main.main.main--sec
+      section.furniture
+         .furniture__slider
+            .furniture__list
+               .furniture__slider.swiper-container
+                  .swiper-wrapper
+                     .furniture__slide.swiper-slide
+                        .background-image
+                           picture
+                              source(srcset="images/furniture/furniture-big.webp" media="(min-width: 1600px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-tab.webp" media="(min-width: 768px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
+                              img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
+                        .furniture__info
+                           h2.furniture__title создаем мебель #[br] по индивидуальным проектам
+                           p.furniture__text.
+                              Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
+                           .furniture__manage
+                              a.btn(href="#") Подробнее о компании
+                              a.btn.btn--secondary(href="#") Оставить заявку
+                     .furniture__slide.swiper-slide
+                        .background-image
+                           picture
+                              source(srcset="images/furniture/furniture-big.webp" media="(min-width: 1600px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-tab.webp" media="(min-width: 768px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
+                              img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
+                        .furniture__info
+                           h2.furniture__title создаем мебель #[br] по индивидуальным проектам
+                           p.furniture__text.
+                              Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
+                           .furniture__manage
+                              a.btn(href="#") Подробнее о компании
+                              a.btn.btn--secondary(href="#") Оставить заявку
+                     .furniture__slide.swiper-slide
+                        .background-image
+                           picture
+                              source(srcset="images/furniture/furniture-big.webp" media="(min-width: 1600px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-tab.webp" media="(min-width: 768px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
+                              img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
+                        .furniture__info
+                           h2.furniture__title создаем мебель #[br] по индивидуальным проектам
+                           p.furniture__text.
+                              Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
+                           .furniture__manage
+                              a.btn(href="#") Подробнее о компании
+                              a.btn.btn--secondary(href="#") Оставить заявку
+                     .furniture__slide.swiper-slide
+                        .background-image
+                           picture
+                              source(srcset="images/furniture/furniture-big.webp" media="(min-width: 1600px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-big.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-tab.webp" media="(min-width: 768px)" type="image/webp")
+                              source(srcset="images/furniture/furniture-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                              source(srcset="images/furniture/furniture-mob.webp" type="image/webp")
+                              img(src="images/furniture/furniture-mob.jpg" alt="Мебель" width="360" height="314")
+                        .furniture__info
+                           h2.furniture__title создаем мебель #[br] по индивидуальным проектам
+                           p.furniture__text.
+                              Произведем точный замер места установки, оперативно сделаем точный расчет мебели, оптимизируем стоимость изделий исходя из вашего бюджета, подготовим коммерческое предложение и пакет эскизов для заключения договора.
+                           .furniture__manage
+                              a.btn(href="#") Подробнее о компании
+                              a.btn.btn--secondary(href="#") Оставить заявку
+                  .furniture__pagination.swiper-pagination
+                  button.furniture__slider-prev.swiper-button-prev
+                  button.furniture__slider-next.swiper-button-next
 
-   section.process
-      .process__inner.container
-         .process__pic
-            .prociess__img
-               img(src="images/process/process-mob.jpg" alt="фотография процесса" width="331" height="186")
-            .process__desc
-               p.
-                  Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
-         .process__info
-            h2.title Как мы изготавливаем нашу продукцию
-            .process__text
-               p.process__text-lead.
-                  Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
-               p.
-                  Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
-               p.
-                  Отличное техническое оснащение производства. В 2009 году фабрика практически полностью (на 90-95%) обновила технологический парк. Сегодня производство, под которое отведено 15 000 м2, представляет собой современный комплекс, оснащенный инновационным оборудованием.
+      section.process
+         .process__inner.container
+            .process__pic
+               .process__img
+                  picture
+                     source(srcset="images/process/process-1920.webp" media="(min-width: 1900px)" type="image/webp")
+                     source(srcset="images/process/process-1920.jpg" media="(min-width: 1900px)" type="image/jpeg")
+                     source(srcset="images/process/process-1440.webp" media="(min-width: 1440px)" type="image/webp")
+                     source(srcset="images/process/process-1440.jpg" media="(min-width: 1440px)" type="image/jpeg")
+                     source(srcset="images/process/process-1440.webp" media="(min-width: 1440px)" type="image/webp")
+                     source(srcset="images/process/process-1440.jpg" media="(min-width: 1440px)" type="image/jpeg")
+                     source(srcset="images/process/process-1024.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/process/process-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                     source(srcset="images/process/process-tab.webp" media="(min-width: 768px)" type="image/webp")
+                     source(srcset="images/process/process-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                     source(srcset="images/process/process-mob.webp" type="image/webp")
+                     img(src="images/process/process/process-mob.jpg" alt="фотография процесса" width="331" height="186")
+               .desc
+                  p.
+                     Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+            .process__info
+               h2.title Как мы изготавливаем нашу продукцию
+               .text
+                  p.text__lead.
+                     Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+                  p.
+                     Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+                  p.
+                     Отличное техническое оснащение производства. В 2009 году фабрика практически полностью (на 90-95%) обновила технологический парк. Сегодня производство, под которое отведено 15 000 м2, представляет собой современный комплекс, оснащенный инновационным оборудованием.
 
-   section.produce
-      .produce__inner
-         .produce__top.container
-            h2.title Наша специализация и производство
-            .produce__info
-               p.produce__text.
-                  Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+      section.produce
+         .produce__inner
+            .produce__top.container
+               h2.title Наша специализация и производство
+               .produce__info
+                  p.produce__text.
+                     Комплексный подход. Специалисты компании всегда готовы помочь с выбором. При этом, если среди готовых изделий не найдется подходящий вариант, вы сможете заказать у нас индивидуальное изготовление мебели. В качестве дополнительных услуг мы предлагаем своим клиентам доставку и сборку купленной продукции.
+                  a.btn-arrow(href="#")
+                     span Перейти к нашим проектам
+                     img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
+            .produce__pic
+               picture
+                  source(srcset="images/produce/produce-1920.webp" media="(min-width: 1920px)" type="image/webp")
+                  source(srcset="images/produce/produce-1920.jpg" media="(min-width: 1920px)" type="image/jpeg")
+                  source(srcset="images/produce/produce-1440.webp" media="(min-width: 1440px)" type="image/webp")
+                  source(srcset="images/produce/produce-1440.jpg" media="(min-width: 1440px)" type="image/jpeg")
+                  source(srcset="images/produce/produce-1024.webp" media="(min-width: 1024px)" type="image/webp")
+                  source(srcset="images/produce/produce-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                  source(srcset="images/produce/produce-tab.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/produce/produce-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/produce/produce-mob.webp" type="image/webp")
+                  img(src="images/produce/produce-mob.jpg" alt="Мебель" width="346" height="203")
+
+      section.work
+         .work__inner.container
+            .work__info
+               h2.title Как мы изготавливаем нашу продукцию
+               .work__text.text
+                  p.text__lead.
+                     Стоит отметить, что специалисты компании «Роникон» всегда находятся в курсе последних тенденций в области мебельного дизайна. Они регулярно посещают отраслевые выставки как российского, так и международного уровня.
+                  p.
+                     Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит. 
+                  p.
+                     При изготовлении мы используем безопасные современные материалы, воплощаем универсальный и при этом стильный дизайн. Готовые решения подойдут, если вам нужно обставить квартиру или дом в сжатые сроки, при этом вы хотите окружить себя актуальной и эстетичной мебелью от производителя
                a.btn-arrow(href="#")
                   span Перейти к нашим проектам
                   img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
-         .produce__pic
-            picture
-               //- source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
-               //- source(srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg")
-               source(srcset="images/produce/produce-mob.webp" type="image/webp")
-               img(src="images/produce/produce-mob.jpg" alt="Мебель" width="346" height="203")
+            .work__pic
+               .work__pic-img
+                  picture
+                     source(srcset="images/work/work-1920.webp" media="(min-width: 1920px)" type="image/webp")
+                     source(srcset="images/work/work-1920.jpg" media="(min-width: 1920px)" type="image/jpeg")
+                     source(srcset="images/work/work-1440.webp" media="(min-width: 1440px)" type="image/webp")
+                     source(srcset="images/work/work-1440.jpg" media="(min-width: 1440px)" type="image/jpeg")
+                     source(srcset="images/work/work-1024.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/work/work-1024.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                     source(srcset="images/work/work-tab.webp" media="(min-width: 500px)" type="image/webp")
+                     source(srcset="images/work/work-tab.jpg" media="(min-width: 500px)" type="image/jpeg")
+                     source(srcset="images/work/work-mob.webp" type="image/webp")
+                     img(src="images/work/work-mob.jpg" alt="Мебель" width="293" height="216")
 
-   section.reviews
-      .reviews__inner.container
-         .reviews__main
-            ul.reviews__doc
+      section.reviews
+         .reviews__inner.container
+            .reviews__main
+               ul.reviews__doc
+                  li.reviews__doc-item
+                     img(src="images/reviews/doc.png" alt="документ" width="77" height="118")
+                  li.reviews__doc-item
+                     img(src="images/reviews/doc.png" alt="документ" width="77" height="118")
+               .reviews__info
+                  .reviews__top
+                     h2.title Отзывы наших клиентов
+                     p.reviews__lead Стоит отметить, что специалист
+                  p.reviews__text.
+                     Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит.
+                  a.btn-arrow(href="#")
+                     span Перейти к отзывам
+                     img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
+            ul.reviews__brands
                li
-                  img(src="images/reviews/doc.png", alt="документ" width="77" height="118")
+                  picture
+                     source(srcset="images/brands/brands-1-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-1-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-1.webp" type="image/webp")
+                     img(src="images/brands/brands-1.png" alt="газпром" width="69" height="34")
                li
-                  img(src="images/reviews/doc.png", alt="документ" width="77" height="118")
-            .reviews__info
-               .reviews__top
-                  h2.title Отзывы наших клиентов
-                  p.reviews__lead Стоит отметить, что специалист
-               p.reviews__text.
-                  Готовая мебель — удобный вариант для тех, кому нужен шкаф, стол или тумба прямо сейчас. Базовые модели подойдут для любого интерьера в современном или классическом стиле. Цены приятно порадуют покупателей, как и качество: любое изделие от Mr.Doors не только эффектно выглядит, но и долго служит.
-               a.btn-arrow(href="#")
-                  span Перейти к нашим проектам
-                  img(src="images/icons/arrow.svg" alt="стрелка" width="55" height="12")
-         ul.reviews__brands
-            li
-               img(src="images/brands/brands-1.png", alt="газпром" width="69" height="34")
-            li
-               img(src="images/brands/brands-2.png", alt="роснефть" width="73" height="37")
-            li
-               img(src="images/brands/brands-3.png", alt="новатэк" width="92" height="27")
-            li
-               img(src="images/brands/brands-4.png", alt="татнефть" width="89" height="31")
+                  picture
+                     source(srcset="images/brands/brands-2-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-2-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-2.webp" type="image/webp")
+                     img(src="images/brands/brands-2.png" alt="роснефть" width="73" height="37")
+               li
+                  picture
+                     source(srcset="images/brands/brands-3-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-3-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-3.webp" type="image/webp")
+                     img(src="images/brands/brands-3.png" alt="новатэк" width="92" height="27")
+               li
+                  picture
+                     source(srcset="images/brands/brands-4-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                     source(srcset="images/brands/brands-4-desk.png" media="(min-width: 1024px)" type="image/png")
+                     source(srcset="images/brands/brands-4.webp" type="image/webp")
+                     img(src="images/brands/brands-4.png" alt="татнефть" width="89" height="31")

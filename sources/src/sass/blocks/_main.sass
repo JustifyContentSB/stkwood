@@ -1,2 +1,17 @@
 .main
    flex-grow: 1
+   padding-top: 24px
+   &.main--sec
+      padding-top: 0
+
+@media screen and (min-width: $width_tab)
+   .main
+      padding-top: 30px
+
+@media screen and (min-width: $width_desk)
+   .main
+      padding-top: 40px
+
+@media screen and (min-width: $width_large)
+   .main
+      padding-top: 60px
