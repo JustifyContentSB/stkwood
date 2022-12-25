@@ -1,6 +1,9 @@
 .furniture
    margin-bottom: var(--margin)
+   &__swiper
+      position: relative
    &__slider
+      height: 314px
       position: relative
       overflow: hidden
       .swiper
@@ -87,6 +90,8 @@
 
 @media screen and (min-width: $width_tab)
    .furniture
+      &__slider
+         height: 500px
       &__info
          max-width: 570px
       &__title
@@ -151,6 +156,8 @@
 
 @media screen and (min-width: $width_large)
    .furniture
+      &__slider
+         height: 680px
       &__slide
          min-height: 680px
          padding-top: 130px
